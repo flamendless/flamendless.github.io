@@ -2,7 +2,6 @@
 title: Acknowledgment
 permalink: /thanks/
 layout: page
-excerpt: Thank you to everyone who have been a part of my life.
 comments: false
 ---
 
@@ -10,4 +9,9 @@ Thank you for visiting my humble website. May you have found what you are lookin
 
 <hr>
 
-All in all I hope that you enjoyed your time and stay here.
+<center>
+	<h2>Special Thanks:</h2>
+</center>
+
+* Hannah Daniella for the logo
+* People over at the Löve discord server and community

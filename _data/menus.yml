@@ -6,11 +6,23 @@
   url: /about/
   external: false
 
-- title: notes
-  url: /notes/
-  external: false # set true if you using external link, see bellow
+- title: games
+  url: /games/
+  external: false
+
+# - title: notes
+#   url: /notes/
+#   external: false # set true if you using external link, see bellow
 
 # Example:
-# - title: github
-#   url: https://github.com/piharpi/jekyll-klise
-#   external: true
+- title: github
+  url: https://github.com/flamendless/flamendless
+  external: true
+
+- title: twitter
+  url: https://twitter.com/flamendless
+  external: true
+
+- title: youtube
+  url: https://www.youtube.com/channel/UCM3v7FvMmmbsHMEpoJNtuDQ
+  external: true
