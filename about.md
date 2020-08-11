@@ -5,14 +5,24 @@ layout: page
 comments: false
 ---
 
-Hi all! My name is <b>Brandon Blanker Lim-it</b>, currently living in the Philippines.
+Hi all! My name is **Brandon Blanker Lim-it**, currently living in the Philippines.
 
-I go by the username <b>flamendless</b> which is
-a combination of <b><i>flame</i></b> and <b><i>endless</i></b>
-(which is a synonym of <b><i>infinity</i></b> and my favorite number <b><i>8</i></b>).
+I go by the username **flamendless** which is
+a combination of ***flame*** and ***endless***,
+which is a synonym of ***infinity*** and my favorite number ***eight (8)***.
+
+But why is my favourite number ***eight (8)*** you asked?
+
+The answer is  ***endless eight***. Do you get the reference?
 
 I am a programmer and indie game developer by heart, but also knowledgable about
 web development (more of a backend developer).
+
+Things I can do with the computer:
+* Game Development
+* Software Engineering
+* Database Administration
+* Web Development - backend preferably
 
 The languages in order of expertise/comfort:
 * **Lua**
