@@ -61,6 +61,7 @@ If you use spaces for indentation, please, just please, why?!
 **Alphabetical list:**
 * [Anonymous Function](#anonymous-function)
 * [Code Blocks](#code-blocks)
+* [Comments](#comments)
 * [Conditionals](#conditionals)
 * [File Structure](#file-structure)
 * [Functions/Methods](#functionsmethods)
@@ -74,6 +75,17 @@ If you use spaces for indentation, please, just please, why?!
 * [Table Declaration](#table-declaration)
 * [Variable Declaration](#variable-declaration)
 * [Variables and Filenames Notation](#variables-and-filenames-notation)
+
+---
+
+### Comments
+
+* to be honest, I do not comment my code. You are free to do whatever you like with comments.
+* my only use case for comment is when labeling something as `TODO`
+	```lua
+	--TODO do something about your life, why are you not commenting Brandon!
+	print(1)
+	```
 
 ---
 
@@ -161,6 +173,19 @@ meaning every thing inside the module/class file should be inside a table or loc
 
 ## Anonymous Function
 
+* anonymous functions should be avoided as much as possible. It is better to
+write it as a well-defined function.
+	```lua
+	local t = {1, 2, 3}
+
+	--instead of
+	map(t, function(a) return a * 2 end)
+
+	--prefer this
+	local function double(a) return a * 2 end
+
+	map(t, double)
+	```
 * passing an anonymouse function (usually as a callback) follows this format:
 	* the `function` syntax should be in the same line as the function caller
 	unless it has too many preceeding parameters in which case in a newline is OK.
@@ -176,6 +201,18 @@ meaning every thing inside the module/class file should be inside a table or loc
 		on_click(1, function()
 			print("yes")
 		end)
+		```
+* the following are to be avoided and to be taken with caution and extreme consideration:
+	* if somehow you are passing an anonymous function during every frame, note that it will be garbage-y.
+		```lua
+		--totally avoid this!
+		function love.update(dt)
+			foo(3, function() print("this will create a lot of garbage") end)
+		end
+		```
+	* do not use function like lambda
+		```lua
+		(function(a) print(a) end)(1, 2, 3, 4, 5)
 		```
 
 ---
@@ -258,10 +295,15 @@ are needed)
 * when a variable inside a table or class, it should have the `nil` value
 * multiple variables with `nil` as initial value is OK to be on the same line
 * when declaring variable(s), always separate it from usage
+* when setting a value inside a table as `nil`, that will be deleted. The purpose of
+writing it even though it will be deleted is for users to see clearly that such a variable
+or property of a table will exist (will be set later in runtime).
 	```lua
 	--declaration
 	local my_table = {
 		a = 1,
+ 		--note that `b` will be deleted in the table, but atleast
+ 		--we know as readers that a property will exist during runtime
 		b = nil,
 		c = 2
 	}
