@@ -2,7 +2,7 @@
 title: "Going Home Remake!"
 description: "why make a remake?"
 date: 2018-01-08
-tags: [gamedev, personal]
+tags: [gamedev, personal, love, lua]
 ---
 
 # WHAT'S HAPPENING?!

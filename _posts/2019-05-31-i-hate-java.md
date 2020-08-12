@@ -2,7 +2,7 @@
 title: "I Hate Java!"
 date: 2019-05-31
 description: "why I am proud to be a Java hater"
-tags: [personal]
+tags: [personal, rant]
 ---
 
 # Here we go, again.

@@ -2,7 +2,7 @@
 title: "DevBlog #3 : Asset Bundling"
 description: "experimenting with asset bundling"
 date: 2019-08-01
-tags: [gamedev, tutorial]
+tags: [gamedev, tutorial, love, lua]
 ---
 
 # BACKGROUND
@@ -318,4 +318,6 @@ Plans:
 * As a separate library.
 * As a program with GUI (drag-drop files, customize the header tags, etc)
 
-If you have questions, follow me [@flamendless](https://twitter.com/flamendless) and message me.
+If you have questions, follow me at
+<a href="https://twitter.com/{{site.author.twitter}}">Twitter</a>
+and freely ask there.

@@ -2,7 +2,7 @@
 title: "DevBlog #2 : Setting Up A Simple Project Using LuaPreprocess"
 date: 2019-07-11
 description: "setting up the project + LuaPreprocess"
-tags: [gamedev, tutorial]
+tags: [gamedev, tutorial, love, lua]
 ---
 
 # UPDATE
@@ -51,7 +51,8 @@ The purpose of this is to show how I use and setup my project with luapreprocess
 
 ---
 
-# STEP #2 - Creating the Makefile
+# ~~STEP #2 - Creating the Makefile~~
+## (UPDATE: See this [post]() for a better build system)
 
 * Now open `Makefile` with your favourite text editor. In my case I use `vim` so the command is `vim Makefile`.
 * Type/paste the following: ( I will put comment for explanations, comments in Makefile is the string after the syntax `#` )

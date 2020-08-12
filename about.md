@@ -15,7 +15,7 @@ But why is my favourite number ***eight (8)*** you asked?
 
 The answer is  ***endless eight***. Do you get the reference?
 
-![flamendless' github stats](https://github-readme-stats.vercel.app/api?username=flamendless&show_icons=true&theme=gruvbox)
+[![flamendless' github stats](https://github-readme-stats.vercel.app/api?username=flamendless&show_icons=true&theme=gruvbox)](https://github.com/flamendless)
 
 Things I can do with the computer:
 * Game Development
@@ -32,8 +32,6 @@ The languages in order of expertise/comfort:
 * **Python**
 * **Haxe**
 * **Java** - *but I really loathe it*
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=flamendless)](https://github.com/anuraghazra/github-readme-stats)
 
 The tools/setup I use:
 * **Linux** - Manjaro - I3-gaps

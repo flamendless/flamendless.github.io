@@ -2,7 +2,7 @@
 title: "Love Jam 2019 Experiences and Lessons"
 date: 2019-02-21
 description: "some insights about my experience participating in the Love Jam 2019"
-tags: [gamedev, personal]
+tags: [gamedev, personal, love, lua]
 ---
 
 # WHAT'S THE JAM?
