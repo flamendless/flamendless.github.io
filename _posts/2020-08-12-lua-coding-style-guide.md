@@ -592,12 +592,19 @@ function love.draw() end
 	------------systems/
 	------------world/
 	--------output/
+	--------release/
+	------------appimage/
+	------------love/
+	------------win32/
+	------------win64/
+	------------/
 	--------build.sh
 	```
 * `res` or `resources` contains assets like images, sounds, spritesheets
 * `modules` for third-party modules
 * `src` or `sources` contains files more-specific to your project/game
 * `libs` containing libraries (.dll, .so)
+* `release` containing releases for different platforms (I recommend using [makelove](https://github.com/pfirsich/makelove))
 * `output` where preprocessed files will be outputted
 * `build.sh` example script you will use to automate building and running your project
 
@@ -612,3 +619,5 @@ well and then combine the bits that you like.
 Stay tuned via RSS or follow me on
 <a href="https://twitter.com/{{site.author.twitter}}">Twitter</a>
 as this will get updated more over time!
+
+For discussions, head over at the post at [Lua subreddit](https://www.reddit.com/r/lua/comments/i88s9r/my_lua_coding_style_guideline/)
