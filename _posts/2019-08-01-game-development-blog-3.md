@@ -1,5 +1,5 @@
 ---
-title: "Game Development Blog #3 : Asset Bundling"
+title: "DevBlog #3 : Asset Bundling"
 description: "experimenting with asset bundling"
 date: 2019-08-01
 tags: [gamedev, tutorial]

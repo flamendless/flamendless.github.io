@@ -1,5 +1,5 @@
 ---
-title: "Game Development Blog #1 : Introduction to Lua Preprocessing"
+title: "DevBlog #1 : Introduction to Lua Preprocessing"
 date: 2019-06-11
 description: "using LuaPreprocess for game development"
 tags: [gamedev, tutorial]

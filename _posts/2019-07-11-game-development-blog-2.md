@@ -1,5 +1,5 @@
 ---
-title: "Game Development Blog #2 : Setting Up A Simple Project Using LuaPreprocess"
+title: "DevBlog #2 : Setting Up A Simple Project Using LuaPreprocess"
 date: 2019-07-11
 description: "setting up the project + LuaPreprocess"
 tags: [gamedev, tutorial]
