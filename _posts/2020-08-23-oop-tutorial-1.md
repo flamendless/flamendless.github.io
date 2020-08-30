@@ -326,7 +326,7 @@ local Shape = require("classes.rectangle")
 local Square = Shape:extend()
 
 function Square:new(size)
-	Square.super.new(self, size size)
+	Square.super.new(self, size, size)
 end
 
 function Square:update(dt)
@@ -371,8 +371,10 @@ end
 function Circle:mousepressed(mx, my, mb)
 	if not (mb == 1) then return end
 
-	local is_clicked = mx >= self.x and mx <= self.x + self.radius and
-		my >= self.y and my <= self.y + self.radius
+	local dx = mx - self.x
+	local dy = my - self.y
+	local d = math.sqrt((dx * dx) + (dy * dy))
+	local is_clicked = d <= self.radius
 
 	if is_clicked then
 		self.is_clicked = true
@@ -384,7 +386,7 @@ function Circle:draw()
 	love.graphics.circle("fill", self.x, self.y, self.radius, self.radius)
 end
 
-return Rectangle
+return Circle
 ```
 
 ---
