@@ -17,7 +17,7 @@ Done? Good! You may now resume your quest!
 
 ---
 
-# UPDATES:
+# UPDATES
 
 Source code is now available [here](https://github.com/flamendless/ECSvsOOPTutorial)
 
