@@ -16,6 +16,12 @@ Done? Good! You may now resume your quest!
 
 ---
 
+# UPDATES:
+
+Source code is now available [here](https://github.com/flamendless/ECSvsOOPTutorial)
+
+---
+
 # DISCLAIMER
 
 This post will not try to teach Lua coding or any programming logic. This is to focus
