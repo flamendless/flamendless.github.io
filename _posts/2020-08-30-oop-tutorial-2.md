@@ -410,6 +410,12 @@ function love.draw()
 	end
 end
 
+function love.mousepressed(mx, my, mb)
+	for i, obj in ipairs(shapes) do
+		obj:mousepressed(mx, my, mb)
+	end
+end
+
 function love.keypressed(key)
 	if key == "r" then
 		love.event.quit("restart")

@@ -240,8 +240,8 @@ For now let us focus on the `Shape` class and its subclasses.
 
 Now open `game_oop/classes/base/shape.lua`:
 ```lua
-local class = require("modules.classic")
-local Shape = class:extend()
+local Class = require("modules.classic")
+local Shape = Class:extend()
 
 local colors = {
 	{1, 0, 0}, --red
