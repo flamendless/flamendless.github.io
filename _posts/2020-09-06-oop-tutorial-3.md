@@ -203,6 +203,11 @@ what just happened, again, we will improve it next time when we add those juicy 
 I am sorry that this week's post is very short! To make up for it, I will add images
 to the posts so readers can see what we are building and the progress so far.
 
+Here are some screenshots to show what we have done so far.
+<img src="../assets/img/oop_vs_ecs/img1.png">
+<img src="../assets/img/oop_vs_ecs/img2.png">
+<img src="../assets/img/oop_vs_ecs/img3.png">
+
 ---
 
 # Next Week's Post:
