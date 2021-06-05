@@ -2,7 +2,7 @@
 title: "Choosing the Language for CodeNect"
 description: "The decisions and story about the development of CodeNect"
 date: 2021-06-05
-tags: [sofdev, vpl, c++, haxe, academics, imgui]
+tags: [software, development, vpl, c++, haxe, academics, imgui, visual programming]
 ---
 
 # What is CodeNect?
