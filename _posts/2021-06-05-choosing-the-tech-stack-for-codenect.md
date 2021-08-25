@@ -1,5 +1,5 @@
 ---
-title: "Choosing the Language for CodeNect"
+title: "Choosing the Tech Stack for CodeNect"
 description: "The decisions and story about the development of CodeNect"
 date: 2021-06-05
 tags: [software, development, vpl, c++, haxe, academics, imgui, visual programming]

@@ -6,8 +6,8 @@
   url: /about/
   external: false
 
-- title: games
-  url: /games/
+- title: games & projects
+  url: /games_projects/
   external: false
 
 # - title: notes
@@ -16,11 +16,11 @@
 
 # Example:
 - title: github
-  url: https://github.com/flamendless/flamendless
+  url: https://github.com/flamendless
   external: true
 
-- title: instagram
-  url: https://www.instagram.com/flamendless/
+- title: itchio
+  url: https://flamendless.itch.io
   external: true
 
 - title: twitter
