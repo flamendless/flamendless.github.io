@@ -5,6 +5,8 @@ layout: page
 comments: false
 ---
 
+> [CV/Resume](/cv_brandon_lim-it.pdf)
+
 Hi all! My name is **Brandon Blanker Lim-it**, currently living in the Philippines.
 
 I go by the username **flamendless** which is
@@ -26,15 +28,18 @@ Things I can do with the computer:
 The languages in order of expertise/comfort:
 * **Lua**
 * **C++**
-* **PHP**
+* **C**
 * **JavaScript**
-* **C#**
+* **SQL**
 * **Python**
+* **C#**
 * **Haxe**
-* **Java** - *but I really loathe it*
+* **PHP**
+* **Java**
+* **Ruby**
+* **Go**
 
-The tools/setup I use:
-* **Linux** - Manjaro - I3-gaps
+The frameworks/tools/setup:
+* **Linux** (I use Arch, BTW)
 * **Vim**
-* **Git** - Sublime Merge for GUI client
-* [Löve Framework](https://love2d.org)
+* **Git**

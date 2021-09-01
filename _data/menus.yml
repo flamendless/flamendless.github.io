@@ -6,8 +6,8 @@
   url: /about/
   external: false
 
-- title: games & projects
-  url: /games_projects/
+- title: projects
+  url: /projects/
   external: false
 
 # - title: notes
@@ -31,6 +31,10 @@
   url: https://www.youtube.com/channel/UCM3v7FvMmmbsHMEpoJNtuDQ
   external: true
 
-- title: support me
-  url: https://ko-fi.com/flamendless
+- title: discord
+  url: https://discord.gg/2W4tyyV
+  external: true
+
+- title: resume
+  url: /cv_brandon_lim-it.pdf
   external: true
