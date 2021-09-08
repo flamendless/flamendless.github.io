@@ -7,6 +7,17 @@ comments: false
 
 Here are the projects, works, websites, games, and more that I have developed.
 
+> # Slab
+> an immediate mode GUI toolkit for the Love 2D framework.  
+original developer: [coding-jackalope](https://github.com/coding-jackalope/)  
+I took over the maintenance and development since v0.8.0
+<img src="../assets/img/projects/slab.png">
+
+Slab Links:
+
+[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/Slab)
+[![Love Forums](../assets/img/icons/love2d.png)](https://love2d.org/forums/viewtopic.php?t=86410)
+
 > # CodeNect: Visual Programming Software
 > Visual programming software developed as a supplementary tool for beginners.
 <img src="../assets/img/projects/codenect.png">
