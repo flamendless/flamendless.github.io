@@ -408,17 +408,7 @@ to localised it within that code block
 
 ## Conditionals
 
-* prefer `not (variable == value)` than `variable ~= value`.
-	```lua
-	local a = 0
-
-	if a ~= 0 then end --not this
-
-	if not (a == 0) then end --prefer this
-
-	if not a then end --be careful of this, this is very different case
-	```
-* if checking if a variable is boolean value
+* if checking if a variable is boolean value (note that make sure the variable is boolean)
 	```lua
 	--instead of these:
 	if correct == true then end
