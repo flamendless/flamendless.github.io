@@ -40,7 +40,7 @@ more time using it as I am a beginner at Haxe)
 1. Haxe in itself is amazing and powerful and that I think is also a problem as
    the docs are kind of lacking in my option. One thing that led to my demise
    is that since I quickly learned Java and C# due to my knowledge with
-   static-typed languages and similar. I was complacent that Haxe would be just a walk
+   static-typed languages and similar, I was complacent that Haxe would be just a walk
    in the park, for the basics of course, not so in-depth. This became a problem
    when I started to deal with dynamic types especially when getting data from JSON.
 2. Since Haxe transpiles to other languages, it became a problem for me dealing
@@ -98,7 +98,7 @@ NO WAY IN EARTH I WOULD SPEND MONTHS WRITING IN JAVA
 # Why I Chose C++
 
 Ah, C++, the most complicated programming language I have used in my life. It
-is very powerful but complicated. Unline my defacto favorite which is Lua, even
+is very powerful but complicated. Unlike my defacto favorite which is Lua, even
 if I spend years and years using it, I will never be able to completely master
 it or wrap my head around it fully like with Lua (I mean, is there someone who
 knows C++ all throughout?).
@@ -116,8 +116,8 @@ I think that the main reason that drove me to finally using C++ is that there is
 of me that really wants to learn more about C++. I am hopelessly a fan of it though
 I have a lot of complaints with it such as:
 
-* Please, do not use *auto* in sample code for you C++ library makers
-* I want to learn C++ and as much as possible know by heart what those *auto*
+* Please, do not use `auto` in sample code for you C++ library makers
+* I want to learn C++ and as much as possible know by heart what those `auto`
   are equivalent to
 * Ugh, templates, really do not want to deal with those. You will see in my
   project that I have not used templating/generics
@@ -143,10 +143,11 @@ using a debugger, but I think there was this one time that I used `lldb` to get 
 on why it segfaults after hours of `print` every other line of code. The cause of
 the segfault? Haha, you know it, referencing a null pointer.
 
-Another thing that I am worried that would get a lot of criticism in the source code
-is the fact that I just wrote almost all of the `singleton` structs as `static`.
-I know that there is a better way on how to make a struct `singleton` but during
-the development I just stuck with `static` methods and properties to make them like
+Another thing that I am worried that would get a lot of criticism in the source
+code is the fact that I just wrote almost all of the `singleton` (I maybe
+technically wrong with my definition of singleton) structs as `static`.  I know
+that there is a better way on how to make a struct `singleton` but during the
+development I just stuck with `static` methods and properties to make them like
 `global`
 
 ### Build System
