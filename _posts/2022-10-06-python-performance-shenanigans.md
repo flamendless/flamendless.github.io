@@ -72,7 +72,7 @@ def test2(): # single-pass iteration
 
 * It is known that in ORMs, for-looping (which is to actually fetch data in the
   database) is to be avoided as much as possible especially with multiple data
-* It is also known that creating complex logic with ORM can be tedious and difficulty
+* It is also known that creating complex logic with ORM can be tedious and difficult
 
 
 ```python
