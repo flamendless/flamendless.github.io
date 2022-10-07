@@ -41,8 +41,8 @@ are very useful and powerful. They make programmer's life easier to the point
 that new programmers are very dependent to them. This is strongly the case with
 Java.
 
-My stand is that, the use of a good programming language should be dependent on
-an IDE. This is a problem with C/C++ and Java in that it is really difficult to
+My stand is that, the use of a good programming language should be independent on
+any IDE. This is a problem with C/C++ and Java in that it is really difficult to
 get them compiling/building/linking without IDE.
 
 Let me first list down why IDE is useful for languages like Java, C/C++, and C#.
