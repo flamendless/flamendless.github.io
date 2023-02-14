@@ -208,3 +208,62 @@ for count in qs:
 * As you can see, the for-loop is really slow
 
 ---
+
+## For-Loop with Removal vs Filter
+
+```python
+import time
+import random
+
+count = 1000
+
+def a():
+    orig = [1000] * count
+    total = 0
+
+    for i in range(count):
+        test = orig.copy()
+        start = time.perf_counter()
+        for t in test:
+            if (i % 2) == 0:
+                # NOTE: this is bad, do not remove element in a list while iterating
+                # this is just for this test case
+                test.pop(random.randint(0, len(test) - 1))
+        end = time.perf_counter()
+        total += (end - start)
+
+    print(f"a: {total / count}")
+
+
+def b():
+    orig = [1000] * count
+    total = 0
+
+    for i in range(count):
+        test = orig.copy()
+        start = time.perf_counter()
+
+        _ = filter(lambda x: (i % 2) == 0, test)
+
+        end = time.perf_counter()
+        total += (end - start)
+
+    print(f"b: {total / count}")
+
+
+# The order is also reversed at other runs to avoid caching.
+a()
+b()
+```
+
+---
+
+### Results:
+
+| Test Run     | For-Loop with Removal     | Filter                  |
+|--------------|---------------------------|-------------------------|
+| 1            | 0.00023961162311024963    | 2.1601941552944483e-06  |
+| 2            | 0.00022506073210388423    | 2.134903275873512e-06   |
+| 3            | 0.00023982634584535846    | 2.482539915945381e-06   |
+| 4            | 0.0002623469726240728     | 1.2303730705752969e-05  |
+| 5            | 0.00022321201750310138    | 2.569707517977804e-06   |
