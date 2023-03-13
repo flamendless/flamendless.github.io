@@ -26,17 +26,17 @@ data = [random.randrange(100) for i in range(1000000)]
 limit = 1000
 
 def test1(): # 2 list comprehensions
-    sum = 0
+    total = 0
     for _ in range(limit):
         start = time.perf_counter()
         _a = [i for i in data if i >= 50]
         _b = [i for i in data if i < 50]
         end = time.perf_counter()
-        sum += (end - start)
-    print(f"Test 1. limit = {limit}. n = {sum/limit}")
+        total += (end - start)
+    print(f"Test 1. limit = {limit}. n = {total/limit}")
 
 def test2(): # single-pass iteration
-    sum = 0
+    total = 0
     for _ in range(limit):
         start = time.perf_counter()
         _a, _b = [], []
@@ -46,8 +46,8 @@ def test2(): # single-pass iteration
             elif i < 50:
                 _b.append(i)
         end = time.perf_counter()
-        sum += (end - start)
-    print(f"Test 2. limit = {limit}. n = {sum/limit}")
+        total += (end - start)
+    print(f"Test 2. limit = {limit}. n = {total/limit}")
 ```
 
 ---
@@ -63,6 +63,46 @@ def test2(): # single-pass iteration
 | 1            | 0.18813625255553051       | 0.17321713546628598     |
 | 2            | 0.17929821243864716       | 0.23278189841780114     |
 | 3            | 0.1843499925005599        | 0.23758876197517384     |
+
+---
+
+## List + Set vs Dict - List Comprehension
+
+```python
+import time
+
+limit = 10000
+
+def test1(): # List + Set
+    total = 0
+    for _ in range(limit):
+        start = time.perf_counter()
+        ids = {category.id for tree in categories for category in tree}
+        end = time.perf_counter()
+        total += (end - start)
+    print(f"Test 1. limit = {limit}. n = {total/limit}")
+
+def test2(): # Dict
+    total = 0
+    for _ in range(limit):
+        start = time.perf_counter()
+        ids = list(set(category.id for tree in categories for category in tree))
+        end = time.perf_counter()
+        total += (end - start)
+    print(f"Test 2. limit = {limit}. n = {total/limit}")
+```
+
+---
+
+### Results
+
+* NOTE: lower is better
+
+| Test Run     | List + Set                   | Dict                    |
+|--------------|------------------------------|-------------------------|
+| 1            | 1.0207993909716605e-09       | 6.737012881785631e-10   |
+| 2            | 1.6323989257216453e-09       | 1.0202988050878048e-09  |
+| 3            | 1.5440979041159153e-09       | 9.007984772324562e-10   |
 
 ---
 
@@ -183,14 +223,14 @@ qs.filter(id__in=ids)
 
 ```python
 # Aggregate
-sum: int = qs.aggregate(Sum("count")).get("count__sum") or 0
+total: int = qs.aggregate(Sum("count")).get("count__sum") or 0
 
 # vs
 
 # For-Loop Increment
-sum: int = 0
+total: int = 0
 for count in qs:
-    sum += count
+    total += count
 ```
 
 ---
