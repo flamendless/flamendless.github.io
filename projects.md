@@ -7,9 +7,19 @@ comments: false
 
 Here are the projects, works, websites, games, and more that I have developed.
 
+> # Going Home: Revisited
+> Remake of Going Home
+<img src="../assets/img/projects/goinghomerevisited.png">
+
+Going Home Links:
+
+[![Itchio](../assets/img/icons/itchio.png)](https://flamendless.itch.io/going-home-revisited)
+[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/GoingHome)
+
+
 > # Slab
-> an immediate mode GUI toolkit for the Love 2D framework.  
-original developer: [coding-jackalope](https://github.com/coding-jackalope/)  
+> an immediate mode GUI toolkit for the Love 2D framework.
+original developer: [coding-jackalope](https://github.com/coding-jackalope/)
 I took over the maintenance and development since v0.8.0
 <img src="../assets/img/projects/slab.png">
 
@@ -35,7 +45,7 @@ Going Home Links:
 
 [![GameJolt](../assets/img/icons/gamejolt.png)](https://gamejolt.com/games/goinghome/237280)
 [![Itchio](../assets/img/icons/itchio.png)](https://flamendless.itch.io/going-home)
-[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/GoingHome)
+[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/GoingHome/releases/tag/GoingHome)
 
 > # Zion English
 > website for English learning and tutoring services
