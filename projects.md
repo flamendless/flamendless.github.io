@@ -53,7 +53,7 @@ Going Home Links:
 
 Zion English Link:
 
-[![GameJolt](../assets/img/icons/zionenglish.png)](https://zion-english.com)
+[![GameJolt](../assets/img/icons/zionenglish.png)](https://zion-cha-english.academy)
 
 ---
 
