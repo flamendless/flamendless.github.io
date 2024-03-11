@@ -15,6 +15,7 @@ Going Home Links:
 
 [![Itchio](../assets/img/icons/itchio.png)](https://flamendless.itch.io/going-home-revisited)
 [![Github](../assets/img/icons/github.png)](https://github.com/flamendless/GoingHome)
+[![Playstore](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited)
 
 
 > # Slab
