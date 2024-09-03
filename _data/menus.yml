@@ -2,12 +2,16 @@
   url: /
   external: false
 
+- title: projects
+  url: /projects/
+  external: false
+
 - title: about
   url: /about/
   external: false
 
-- title: projects
-  url: /projects/
+- title: support
+  url: /support/
   external: false
 
 # - title: notes
