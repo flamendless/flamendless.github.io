@@ -11,11 +11,12 @@ Here are the projects, works, websites, games, and more that I have developed.
 > Remake of Going Home
 <img src="../assets/img/projects/goinghomerevisited.png">
 
-Going Home Links:
+Going Home: Revisited Links:
 
 [![Itchio](../assets/img/icons/itchio.png)](https://flamendless.itch.io/going-home-revisited)
+[![Playstore (Paid)](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited)
+[![Playstore (Free)](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited_free)
 [![Github](../assets/img/icons/github.png)](https://github.com/flamendless/GoingHome)
-[![Playstore](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited)
 
 
 > # Slab
