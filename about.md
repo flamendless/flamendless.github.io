@@ -5,7 +5,7 @@ layout: page
 comments: false
 ---
 
-> [CV/Resume](/cv_brandon_lim-it.pdf)
+> [CV/Resume](https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing)
 
 Hi all! My name is **Brandon Blanker Lim-it**, currently living in the Philippines.
 
