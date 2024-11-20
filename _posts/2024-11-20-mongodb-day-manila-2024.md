@@ -17,7 +17,11 @@ I have not included other sessions/talks because I have no stark thing to commen
 
 ## RDBMS to NoSQL
 
-This should be one of the main topics because in the Philippines, part of the database subject in college/university curriculum is RDBMS. How we innately design database schemas is with normalization in mind as second nature. I know that one of the purpose of the event is to get people to try NoSQL that will result in more customers opting for the premium plans so breaking this barrier would have been wiser?
+This should be one of the main topics because in the Philippines, part of the database subject in college/university curriculum is RDBMS.
+
+How we innately design database schemas is with normalization in mind as second nature.
+
+I know that one of the purpose of the event is to get people to try NoSQL that will result in more customers opting for the premium plans so breaking this barrier would have been wiser?
 
 These were briefly discussed but not objectively presented, again, because of the short time (30 minutes only!)
 
@@ -40,9 +44,11 @@ I am somewhat convinced that storage is far cheaper than processing power so it 
 
 ### MongoDB Generative AI Application Stack
 
-The title is misleading in a very good way. What I really liked and consider to be the "better way" to teach, discuss, and present AI technology is what happened with this session. This session talked about foundational, deeper, more technical, and more practical way on building and developing AI with MongoDB not as the focused, but presented as a good investment for storage and bridge for the different components needed for an AI software. I would like to talk more about this but I failed to take notes because I was "in the zone" listening with this session. Kudos to the speaker!
+The title is misleading in a very good way. What I really liked and consider to be the "better way" to teach, discuss, and present AI technology is what happened with this session. This session talked about foundational, deeper, more technical, and more practical way on building and developing AI with MongoDB not as the focus, but presented as a good investment for storage and bridge for the different components needed for an AI software.
 
-I have learned more about AI with this 30 minutes session compared to the numerous hours from SoftCon 2024.
+I would like to talk more about this but I failed to take notes because I was "in the zone" listening with this session. Kudos to the speaker!
+
+I have learned and appreciated listening more about AI with this 30 minutes session compared to the numerous hours from SoftCon 2024.
 
 
 ### AWS: Accelerate Building GenAI Applications with AWS
@@ -51,12 +57,15 @@ This one is okay-ish for me, maybe because the bar has been set too high by the 
 
 Anyway, AWS is one of the sponsors of this event so shoutout to AWS for supporting what I consider to be minor competition because AWS has their own NoSQL storage and AI/ML services as well.
 
-I do like the system architecture design. *This is how you SHOULD do a proper and understandable architecture diagram!*.
-I can not stress this enough, please do not pollute the whole architecture with hundreds of services and components. You are building a working and functioning house, not a whole country.
+I do like and commend the system architecture design.
+
+*This is how we SHOULD do a proper and understandable architecture diagram!*.
+
+I can not stress this enough, please do not pollute the whole architecture with hundreds of services and components. We are supposed to be building a working and functioning robust and smooth (fast and efficient) house, not a whole country (slow and costly).
 
 ---
 
-### Customer Sessions
+## Customer Sessions
 
 This is another way of acquiring new clients and customers. Let the testimonies of your current users do the talking and convincing.
 
@@ -64,14 +73,17 @@ Security Bank and ABS-CBN were those two out of the many customers in the countr
 
 First of all, the Security Bank showed promising changes and improvements with their system as they showed how MongoDB helped them.
 
-I can not say the same for ABS-CBN, the short portion that showed MongoDB in their system is a short and confusing moment. Maybe the elements in the diagram they made is incorrect or not checked properly because it showed a terrible technical use of MongoDB and it does not highlight MongoDB. I will not go on with more details because I am also very confused on the design...
+I can not say the same for ABS-CBN, the short portion that showed MongoDB in their system is a short and confusing moment. Maybe the elements in the diagram they made is incorrect or not checked properly for technicalities like the "GraphSQL" component and whatnot.
 
+It showed a terrible technical use of MongoDB and it does not highlight MongoDB. I will not go on with more details because I am also very confused about the architecture design...
+
+I would like to insert an ABS-CBN joke here but... I know that my joke will shutdown any interest in this blog post.
 
 ---
 
-### Beyond the Search Bar
+## Beyond the Search Bar
 
-This one is interesting because this is more technical and developer-friendly session as it shows code snippets on how to do pagination, filtering, and sorting the traditional way and the Atlas Search feature. However, just one thing to criticize of future improvement, please lessen the indentation of the code shown on the screen.
+This one is interesting because this is more technical and developer-friendly session as it shows code snippets on how to do the basic and common pagination, filtering, and sorting the traditional way and with the Atlas Search feature. However, just one thing to criticize of future improvement, please lessen the indentation of the code shown on the screen.
 
 The slides were divided into two. Right half is for showing the result or keypoints. Left half is showing code snippet. The left half already does word wrapping (meaning line is too liong) on just the 2 level of nesting.
 
@@ -80,7 +92,7 @@ Imagine this (I hope my website shows the code properly and as I intended though
 ```javascript
 db.Query({
 			"$find": {
-						"id": "test",
+						"id": "0x00002192819281abcdefhkdasldkasldsasadkasldkasdkas",
 			}
 })
 ```
@@ -94,6 +106,5 @@ So much waste of space!
 This one is what I am looking and waiting out for ever since I saw the agenda. As a programmer with performance and optimization at my heart and soul, I am satisfied with the points given on this session. I think the only thing I would ask for future sessions like this is to show and be more technical since these things are done at the low-level by low-level people.
 
 ---
-
 
 All in all the whole event is worthwhile and commendable. Looking forward to next year's MongoDB Day Manila!
