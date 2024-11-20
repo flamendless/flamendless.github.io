@@ -59,7 +59,7 @@ Anyway, AWS is one of the sponsors of this event so shoutout to AWS for supporti
 
 I do like and commend the system architecture design.
 
-*This is how we SHOULD do a proper and understandable architecture diagram!*.
+**This is how we SHOULD do a proper and understandable architecture diagram!**
 
 I can not stress this enough, please do not pollute the whole architecture with hundreds of services and components. We are supposed to be building a working and functioning robust and smooth (fast and efficient) house, not a whole country (slow and costly).
 
