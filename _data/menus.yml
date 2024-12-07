@@ -1,4 +1,8 @@
-- title: home
+- title: home (WIP)
+  url: https://flamendless.xyz
+  external: true
+
+- title: blogs
   url: /
   external: false
 

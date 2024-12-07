@@ -5,7 +5,19 @@ layout: page
 comments: false
 ---
 
-Here are the projects, works, websites, games, and more that I have developed.
+Here are the projects, works, websites, games, and more that I have developed (sorted from most recent to least).
+
+> # Youth Summit 2024 Bible Quiz
+> Theme: Karerun (Career Run)
+<img src="../assets/img/projects/ys2024quiz.jpg">
+
+Links:
+
+<!-- <a href="https://www.flaticon.com/free-icons/website" title="website icons">Website icons created by Freepik - Flaticon</a> -->
+[![Blog](../assets/img/icons/github.png)](https://flamendless.github.io/developing-an-app-in-go-in-around-4-hours/)
+[![Website](../assets/img/icons/www.png)](https://flamendless.xyz/youth-summit-2024-quiz/)
+[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/youth-summit-quiz-2024)
+
 
 > # Going Home: Revisited
 > Remake of Going Home
@@ -53,13 +65,15 @@ Going Home Links:
 > website for English learning and tutoring services
 <img src="../assets/img/projects/zionenglish.png">
 
-Zion English Link:
+Zion English Links:
 
-[![GameJolt](../assets/img/icons/zionenglish.png)](https://zion-cha-english.academy)
+[![Website](../assets/img/icons/zionenglish.png)](https://zion-cha-english.academy)
+[![Github](../assets/img/icons/github.png)](https://github.com/flamendless/zion-english-vue)
 
 ---
 
 > You can find out more over at
+
 [GameJolt](https://gamejolt.com/@brbl/games),
 [Itchio](https://flamendless.itch.io), and
 [Github](https://github.com/flamendless)
