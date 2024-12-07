@@ -1,4 +1,4 @@
-- title: home (WIP)
+- title: home
   url: https://flamendless.xyz
   external: true
 
@@ -31,7 +31,7 @@
   url: https://flamendless.itch.io
   external: true
 
-- title: twitter
+- title: X
   url: https://twitter.com/flamendless
   external: true
 

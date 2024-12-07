@@ -19,27 +19,36 @@ The answer is  ***endless eight***. Do you get the reference?
 
 [![flamendless' github stats](https://github-readme-stats.vercel.app/api?username=flamendless&show_icons=true&theme=gruvbox)](https://github.com/flamendless)
 
-Things I can do with the computer:
+Things I magically command the computer:
 * Game Development
 * Software Engineering
 * Database Administration
-* Web Development - backend preferably
+* Backend Development
+* Data Processing
+* Web Development (not preferred!)
 
 The languages in order of expertise/comfort:
-* **Lua**
-* **C++**
-* **C**
-* **JavaScript**
-* **SQL**
-* **Python**
-* **C#**
-* **Haxe**
-* **PHP**
-* **Java**
-* **Ruby**
 * **Go**
+* **Lua**
+* **Python**
+* **C**
+* **Rust**
+* **C++**
+* **JavaScript/TypeScript**
+* **SQL**
+* **C#**
+* **Java**
 
-The frameworks/tools/setup:
+The tech/frameworks/tools/setup:
 * **Linux** (I use Arch, BTW)
-* **Vim**
+* **NeoVim**
 * **Git**
+* **tmux**
+* **WezTerm**
+* **AWS Lambda, S3, EC2, SES**
+* **Linode**
+* **Datadog**
+* **GRPC**
+* **REST API**
+* **GraphQL**
+* **And more!**
