@@ -51,7 +51,7 @@ Here's the Python one which I thought would be a breeze:
 
 ```python
 def get_signature(secret: str, vals: str) -> str:
-	# write the value (in bytes, using encode) in to the sha256 object
+	# write the value (in bytes, using encode) into the sha256 object
 	h = sha256()
 	h.update(vals.encode())
 
