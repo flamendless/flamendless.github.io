@@ -51,7 +51,7 @@ Here's the Python one which I thought would be a breeze:
 
 ```python
 def get_signature(secret: str, vals: str) -> str:
-	# write the value (in bytes, using encode) into the sha256 object
+	#write the value (in bytes, using encode) into the sha256 object
 	h = sha256()
 	h.update(vals.encode())
 
@@ -62,17 +62,21 @@ def get_signature(secret: str, vals: str) -> str:
 
 Note that at this point, I decided to never change the implementation in the Go side. This minimizes the debugging and workaround needed.
 
-The Python code obviously does not work because the `secret` key is not even used. Looking at the `sha256` module, there is no equivalent of Go's `Sum` function. So I thought `extend` would suffice.
+The Python code obviously does not work because the `secret` key is not even used. Looking at the `sha256` module, there is no equivalent of Go's `Sum` function. I thought `extend` would suffice.
 
 Most `sha256` resources online show `h.Sum(nil)` usage but I decided to go for passing `[]byte(secret)`.
 
-so I added `h.update(secret.encode())` after `h.update(vals.encode())` but to no avail.
+I added `h.update(secret.encode())` after `h.update(vals.encode())` but to no avail.
 
-I won't show the details but I inspected the bytes (in decimals) in both the Go and Python version and found out that everything is equal when `secret` is not in the equation. So it is exactly the `secret` component that we need to solve. So it is time to read what `Sum` really does.
+I won't show the details but I inspected the bytes (in decimals) in both the Go and Python version and found out that everything is equal when `secret` is not in the equation. It is exactly the `secret` component that we need to solve. It is time to read what `Sum` really does.
 
-The tricky part here was understanding the `Sum` function. The key sentence of `Sum` functionality is `Sum appends the current hash to b and returns the resulting slice` so basically `[]byte(secret) + current hash state`
+The tricky part here was understanding the `Sum` function. The documentation of `Sum` functionality is:
 
-So here is the Python code after that incomplete understanding:
+> Sum appends the current hash to b and returns the resulting slice`
+
+So basically `[]byte(secret) + current hash state`.
+
+Here is the Python code after that incomplete understanding:
 
 ```python
 h.update(secret.encode())
@@ -81,15 +85,19 @@ enc: bytes = urlsafe_b64encode(h.digest())
 return enc.decode(enc)
 ```
 
-But it still yielded a different result. So I tried trying other `encoding` like `ascii`, `utf-16`, and so on.
+But it still yielded a different result. I tried trying other `encoding` like `ascii`, `utf-16`, and so on.
 
 ---
 
 # Interesting...
 
-So when dealing with such data, I decided I need to actually inspect the bytes array (in numbers) of what is happening. I tried Python's `encode` and `bytearray(x)` functions but they just print the string version...
+One of the low-level and hacker-y thing to do in cases like this is to go in the memory representation of the variables, a debugger would really be helpful but of course I went with `print` debugging instead of setting up debugger for Python.
 
-Eventually I found about `memoryview(input_str.encode()).tolist()` to see the bytes array of the hash state. Why Python made that part harder or with simpler module/function beats me, oh well. There was something off with the bytes... Time for matrix in the brain moment:
+I tried Python's `encode` and `bytearray(x)` functions but they just print the string version... Eventually I found about `memoryview(input_str.encode()).tolist()` to see the bytes array of the hash state.
+
+Why Python made that part harder or with simpler module/function beats me, oh well.
+
+There was something off with the bytes... Time for matrix in the brain moment:
 
 ```python
 h.update(vals.encode())
@@ -104,7 +112,11 @@ return enc.decode(enc)
 
 Still incorrect but my low-level programmer brain senses that I am so close...
 
-The key phrase (uppercased) in `Sum` documentation is `appends the CURRENT HASH to B (BYTES) and returns the resulting slice` which means that `secret` is not supposed to be hashed by `sha256`.
+The key phrase (uppercased) in `Sum` documentation is:
+
+> appends the CURRENT HASH to B (BYTES) and returns the resulting slice
+
+which means that `secret` is not supposed to be hashed by `sha256`.
 
 
 ```python
