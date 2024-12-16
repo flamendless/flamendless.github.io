@@ -33,9 +33,8 @@ func GetSignature(secret string, vals ...string) string {
 		buf.WriteString(val)
 	}
 
-	h := sha256.New()
 	//Write the buffer into the sha256 struct
-	//Create sha256
+	h := sha256.New()
 	if _, err := h.Write(buf.Bytes()); err != nil {
 		logger.Log().Error("GetSignature", zap.Error(err))
 		return ""
