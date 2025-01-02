@@ -5,13 +5,19 @@ date: 2024-12-16
 tags: [go, golang, python, sha256]
 ---
 
+# Disclaimer
+
+After receiving helpful feedbacks from the community, I would like to clear out that this is not a tutorial in any form or something that other developers should copy. This is just me sharing my experiences. I also added/edited the post to make my humor/sarcasm clearer so as not to be treated negatively especially with the security points. Thank you!
+
+---
+
 # Intro
 
 One of the mundane works we developers do is integrating a service into another one, seamlessly preferred.
 
 If it is a third-party service with lacking or obscure documentation then you are in for a treat, or thread?. Fortunately, both services are written and maintained by me so I can easily integrate, test, and debug it.
 
-I won't go into much details about the services but let's just call them `A` and `B` for the sake of simplicity. As usual, when we write services we also provide an interface like an API (REST) and then we add layers into it especially one for security.
+I won't go into much details about the services but let's just call them `A` and `B` for the sake of simplicity. As usual, when we write services we also provide an interface like an API (REST) and then we add layers into it especially one for security. Security through obscurity as its finest haha!
 
 For these services, I went with the `hash signature` route since it is easier to do as well as provides good security.
 
