@@ -1,7 +1,7 @@
 ---
 title: "My Dev Setup"
 description: "My development setup currently for 2025"
-date: 2025-01-25
+date: 2025-01-22
 tags: [dev, setup, tech]
 ---
 
