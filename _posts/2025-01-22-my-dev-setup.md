@@ -30,6 +30,8 @@ Windows:
 
 I like the fact that whenever I get the chance to go full Linux again, I won't have problem with the Windows section since most of them are cross-platform and are not core parts to my dev setup.
 
+For hardware, I am not that particular with it except for the keyboard. I am using the [Kinesis Freestyle 2](https://kinesis-ergo.com/keyboards/freestyle2-keyboard/) with V3 Tenting and a wood for wrists rest.
+
 I used Arch BTW.
 
 
