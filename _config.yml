@@ -21,7 +21,7 @@ author:
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # Url settings
-url: "https://flamendless.github.io"
+url: "https://flamendless.xyz"
 baseurl:
 permalink: /:title/
 google_analytics: UA-141260881-1 # Add your GA Tracking Id
