@@ -7,6 +7,13 @@ comments: false
 
 Here are the projects, works, websites, games, and more that I have developed (sorted from most recent to least).
 
+> # C-Choice
+<img src="../assets/img/projects/cchoice.png">
+
+Links:
+
+[![Website](../assets/img/icons/www.png)](https://cchoice.shop)
+
 > # Youth Summit 2024 Bible Quiz
 > Theme: Karerun (Career Run)
 <img src="../assets/img/projects/ys2024quiz.jpg">

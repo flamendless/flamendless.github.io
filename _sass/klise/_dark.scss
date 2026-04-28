@@ -31,6 +31,10 @@ body[data-theme="dark"] {
     a {
       color: $dark-text-link-blue;
 
+      img {
+        border-color: rgba(234, 234, 234, 0.3);
+      }
+
       &:hover,
       &:active,
       &:focus {
