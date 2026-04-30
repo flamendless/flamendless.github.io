@@ -44,7 +44,7 @@ On the run, I have added the following to my C/C++ knowledge:
 * Some Standard Library stuff like **chrono**, **string manipulation**, **printf**, and more.
 * More SFML stuff
 * [spdlog](https://github.com/gabime/spdlog)
-* Properly use (for the very first time) an C/C++ IDE called [Code::Blocks](http://www.codeblocks.org/)
+* Properly use (for the very first time) an C/C++ IDE called [Code::Blocks](https://www.codeblocks.org/)
 
 ---
 

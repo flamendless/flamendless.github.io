@@ -39,7 +39,7 @@ Also, as a programmer, I was ~~cramming~~ busy with other project(s) that it too
 
 # Stack, Tech Stack:
 
-1. [Go](http://go.dev/) - includes router. I wish I have used [Chi](https://go-chi.io) instead.
+1. [Go](https://go.dev/) - includes router. I wish I have used [Chi](https://go-chi.io) instead.
 2. [Tailwind](https://tailwindcss.com) - For styling.
 3. [Templ](https://templ.guide) - Serverside rendering and templating.
 4. [HTMX](https://htmx.org) - Actually not used YET because of the small and simple scope but will be utilized on further enhancements and features of the quiz app.
