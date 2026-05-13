@@ -7,8 +7,6 @@ comments: false
 
 > [CV/Resume](https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing){:target="_blank"}
 
-[![flamendless' github stats](https://github-readme-stats.vercel.app/api?username=flamendless&show_icons=true&theme=gruvbox)](https://github.com/flamendless)
-
 Things I magically command the computer:
 * Game Development
 * Software Engineering
