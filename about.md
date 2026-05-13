@@ -10,10 +10,11 @@ comments: false
 Things I magically command the computer:
 * Game Development
 * Software Engineering
-* Database Administration
 * Backend Development
+* DevOps
+* Database Administration
+* Web Development
 * Data Processing
-* Web Development (not preferred!)
 
 The languages in order of expertise/comfort:
 * **Go**
