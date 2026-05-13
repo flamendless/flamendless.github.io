@@ -5,17 +5,7 @@ layout: page
 comments: false
 ---
 
-> [CV/Resume](https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing)
-
-Hi all! My name is **Brandon Blanker Lim-it**, currently living in the Philippines.
-
-I go by the username **flamendless** which is
-a combination of ***flame*** and ***endless***,
-which is a synonym of ***infinity*** and my favorite number ***eight (8)***.
-
-But why is my favourite number ***eight (8)*** you asked?
-
-The answer is  ***endless eight***. Do you get the reference?
+> [CV/Resume](https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing){:target="_blank"}
 
 [![flamendless' github stats](https://github-readme-stats.vercel.app/api?username=flamendless&show_icons=true&theme=gruvbox)](https://github.com/flamendless)
 
@@ -32,12 +22,13 @@ The languages in order of expertise/comfort:
 * **Lua**
 * **Python**
 * **C**
-* **Rust**
 * **C++**
+* **Rust**
 * **JavaScript/TypeScript**
-* **SQL**
+* **SQL and NoSQL**
 * **C#**
 * **Java**
+* **PHP**
 
 The tech/frameworks/tools/setup:
 * **Linux** (I use Arch, BTW)
@@ -51,4 +42,6 @@ The tech/frameworks/tools/setup:
 * **GRPC**
 * **REST API**
 * **GraphQL**
+* **Grafana**
+* **Prometheus**
 * **And more!**
