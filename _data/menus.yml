@@ -2,6 +2,10 @@
   url: https://flamendless.xyz
   external: true
 
+- title: course
+  url: https://flamendless.xyz/course
+  external: true
+
 - title: blogs
   url: /
   external: false
@@ -14,9 +18,9 @@
   url: /about/
   external: false
 
-- title: support
-  url: /support/
-  external: false
+# - title: support
+#   url: /support/
+#   external: false
 
 # - title: notes
 #   url: /notes/
