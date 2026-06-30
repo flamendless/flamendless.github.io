@@ -9,7 +9,7 @@ Here are the projects, works, websites, games, and more that I have developed (s
 
 > # THE GOAL
 > FOCUS on THE GOAL! Simplest yet effective goal-tracking and reminder application
-<img src="../assets/img/projects/thegoal.png">
+<img src="../assets/img/projects/thegoal.png" width="96px">
 
 Links:
 
