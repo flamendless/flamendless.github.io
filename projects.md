@@ -7,6 +7,14 @@ comments: false
 
 Here are the projects, works, websites, games, and more that I have developed (sorted from most recent to least).
 
+> # THE GOAL
+> FOCUS on THE GOAL! Simplest yet effective goal-tracking and reminder application
+<img src="../assets/img/projects/thegoal.png">
+
+Links:
+
+[![Playstore](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.thegoal)
+
 > # BeriBunch
 > Your own brand profile and galleries
 <img src="../assets/img/projects/beribunch.png">
