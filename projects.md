@@ -7,6 +7,15 @@ comments: false
 
 Here are the projects, works, websites, games, and more that I have developed (sorted from most recent to least).
 
+> # Simply Track: Money
+> Simply track just the current paycheck and expenses
+<br>
+<img src="../assets/img/projects/stm.png" width="128px">
+
+Links:
+
+[![Playstore](../assets/img/icons/playstore.png)](https://play.google.com/store/apps/details?id=org.flamendless.theexpense)
+
 > # THE GOAL
 > FOCUS on THE GOAL! Simplest yet effective goal-tracking and reminder application
 <img src="../assets/img/projects/thegoal.png" width="96px">
