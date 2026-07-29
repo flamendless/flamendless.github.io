@@ -1,0 +1,84 @@
+<section class="about-sections" aria-label="About details">
+  <section class="about-section" data-animate>
+    <div class="about-section-header">
+      <h2 class="about-section-title">What I do</h2>
+      <p class="about-section-description">
+        Areas where I spend most of my time building, shipping, and maintaining software.
+      </p>
+    </div>
+    <ul class="about-skill-grid">
+      {% for skill in site.data.about.skills %}
+        <li>
+          <div class="about-skill-card">{{ skill }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="about-section" data-animate>
+    <div class="about-section-header">
+      <h2 class="about-section-title">Languages</h2>
+      <p class="about-section-description">
+        Ordered by expertise and comfort — strongest picks first.
+      </p>
+    </div>
+    <ul class="about-tag-list">
+      {% for language in site.data.about.languages %}
+        <li>
+          <span class="about-tag{% if language.primary %} about-tag--primary{% endif %}">
+            {{ language.name }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="about-section" data-animate>
+    <div class="about-section-header">
+      <h2 class="about-section-title">Tools &amp; stack</h2>
+      <p class="about-section-description">
+        Frameworks, platforms, and daily drivers behind the work.
+      </p>
+    </div>
+    <ul class="about-tag-list">
+      {% for tool in site.data.about.tools %}
+        <li>
+          <span class="about-tag">{{ tool }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="about-section about-connect" data-animate>
+    <div class="about-section-header">
+      <h2 class="about-section-title">Connect</h2>
+      <p class="about-section-description">
+        Find me around the web or reach out directly.
+      </p>
+    </div>
+    <div class="about-connect-links">
+      <a
+        class="about-connect-link"
+        href="mailto:{{ site.author.email }}"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span>Email</span>
+      </a>
+      {% for menu in site.data.menus %}
+        {% if menu.external and menu.title != "home" and menu.title != "course" %}
+          <a
+            class="about-connect-link"
+            href="{{ menu.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>{{ menu.title }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</section>

@@ -1,0 +1,432 @@
+$about-accent: #2563eb;
+$about-accent-hover: #1d4ed8;
+$about-surface: #ffffff;
+$about-surface-muted: #f4f4f5;
+$about-border: #e4e4e7;
+$about-text: #09090b;
+$about-text-muted: #52525b;
+$about-shadow: 0 1px 2px rgba(9, 9, 11, 0.05);
+$about-shadow-hover: 0 12px 32px rgba(9, 9, 11, 0.1);
+
+.about-wrapper {
+  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
+  max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
+
+  @include media-query($on-mobile) {
+    max-width: calc(#{$wide-size} - #{$spacing-full});
+    max-width: -webkit-calc(#{$wide-size} - #{$spacing-full});
+  }
+}
+
+.about-page {
+  .about-content {
+    padding-top: 0;
+  }
+}
+
+.about-hero {
+  margin-top: 6.5em;
+  margin-bottom: 3rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-avatar-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.5rem;
+  height: 9.5rem;
+  margin: 0 auto 1.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 1.25rem;
+  border: 1px solid $about-border;
+  background: $about-surface-muted;
+  box-shadow: $about-shadow;
+  overflow: hidden;
+}
+
+.about-avatar {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+.about-eyebrow {
+  margin: 0 0 0.5rem;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $about-accent;
+}
+
+.about-title {
+  margin: 0 0 0.75rem;
+  font-family: "Archivo", $sans-family;
+  font-size: 2.4em;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: $about-text;
+}
+
+.about-lead {
+  max-width: 34rem;
+  margin: 0 auto 0.5rem;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: $about-text-muted;
+}
+
+.about-intro {
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  line-height: 1.6;
+  color: $about-text-muted;
+}
+
+.about-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.about-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid $about-accent;
+  background: $about-accent;
+  color: $white;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    background: $about-accent-hover;
+    border-color: $about-accent-hover;
+    color: $white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($about-accent, 0.35);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &--secondary {
+    background: transparent;
+    color: $about-text;
+
+    &:hover {
+      background: $about-surface-muted;
+      border-color: darken($about-border, 8%);
+      color: $about-text;
+    }
+  }
+
+  &[target="_blank"]::after {
+    content: none;
+  }
+}
+
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section-header {
+  margin-bottom: 1.1rem;
+}
+
+.about-section-title {
+  margin: 0 0 0.35rem;
+  font-family: "Archivo", $sans-family;
+  font-size: 1.35rem;
+  color: $about-text;
+}
+
+.about-section-description {
+  margin: 0;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  line-height: 1.55;
+  color: $about-text-muted;
+}
+
+.about-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include media-query($on-desktop) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include media-query($on-mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &::before {
+      display: none;
+      content: none;
+    }
+  }
+}
+
+.about-page .page-content ul.about-skill-grid {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-skill-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0.85rem 1rem;
+  box-sizing: border-box;
+  border: 1px solid $about-border;
+  border-radius: 12px;
+  background: $about-surface;
+  box-shadow: $about-shadow;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  color: $about-text;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: darken($about-border, 6%);
+    box-shadow: $about-shadow-hover;
+    transform: translateY(-2px);
+  }
+}
+
+.about-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid $about-border;
+  border-radius: 999px;
+  background: $about-surface-muted;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $about-text-muted;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+  &--primary {
+    background: rgba($about-accent, 0.1);
+    border-color: rgba($about-accent, 0.25);
+    color: $about-accent;
+    font-weight: 600;
+  }
+}
+
+.about-connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.about-connect-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid $about-border;
+  border-radius: 999px;
+  background: $about-surface;
+  color: $about-text;
+  font-family: "Space Grotesk", $sans-family;
+  font-size: $small-font-size;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: $about-accent;
+    border-color: $about-accent;
+    color: $white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($about-accent, 0.35);
+    outline-offset: 2px;
+  }
+
+  &[target="_blank"]::after {
+    content: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero,
+  .about-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-skill-card,
+  .about-cta {
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+body[data-theme="dark"] {
+  .about-title {
+    color: $dark-white;
+  }
+
+  .about-lead,
+  .about-intro,
+  .about-section-description {
+    color: $dark-gray;
+  }
+
+  .about-avatar-frame {
+    border-color: $dark-smoke;
+    background: $dark-light;
+    box-shadow: none;
+  }
+
+  .about-avatar {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .about-cta {
+    &--secondary {
+      background: transparent;
+      color: $dark-white;
+
+      &:hover {
+        background: $dark-light;
+        border-color: $dark-gray;
+        color: $dark-white;
+      }
+    }
+  }
+
+  .about-section-title {
+    color: $dark-white;
+  }
+
+  .about-skill-card {
+    background: $dark-light;
+    border-color: $dark-smoke;
+    color: $dark-white;
+    box-shadow: none;
+
+    &:hover {
+      border-color: $dark-gray;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  .about-tag {
+    background: $dark-black;
+    border-color: $dark-smoke;
+    color: $dark-gray;
+
+    &--primary {
+      background: rgba($dark-text-link-blue, 0.12);
+      border-color: rgba($dark-text-link-blue, 0.35);
+      color: $dark-text-link-blue;
+    }
+  }
+
+  .about-connect-link {
+    background: $dark-light;
+    border-color: $dark-smoke;
+    color: $dark-white;
+
+    &:hover {
+      background: $dark-text-link-blue;
+      border-color: $dark-text-link-blue;
+      color: $dark-white;
+    }
+  }
+}

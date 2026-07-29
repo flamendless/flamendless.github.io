@@ -1,0 +1,54 @@
+<section class="projects" aria-label="Project portfolio">
+  <div class="projects-grid">
+    {% for project in site.data.projects %}
+      <article class="project-card" data-animate>
+        <div class="project-card-media">
+          <img
+            src="{{ project.image | relative_url }}"
+            alt="{{ project.title | escape }} preview"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="240"
+          />
+          <span class="project-card-category">{{ project.category }}</span>
+        </div>
+        <div class="project-card-body">
+          <h2 class="project-card-title">{{ project.title }}</h2>
+          <p class="project-card-description">{{ project.description }}</p>
+          <ul class="project-card-links">
+            {% for link in project.links %}
+              <li>
+                <a
+                  class="project-link"
+                  href="{{ link.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="{{ '/assets/img/icons/' | append: link.icon | append: '.png' | relative_url }}"
+                    alt=""
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span>{{ link.label }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <aside class="projects-profiles">
+    <p>Find more work on</p>
+    <div class="projects-profiles-links">
+      <a href="https://gamejolt.com/@brbl/games" target="_blank" rel="noopener noreferrer">Game Jolt</a>
+      <a href="https://flamendless.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>
+      <a href="https://github.com/flamendless" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </aside>
+</section>

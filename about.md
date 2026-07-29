@@ -1,46 +1,8 @@
 ---
-title: About flamendless
+title: About
 permalink: /about/
-layout: page
+layout: about
 comments: false
 ---
 
-> [CV/Resume](https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing){:target="_blank"}
-
-Things I magically command the computer:
-* Game Development
-* Software Engineering
-* Backend Development
-* DevOps
-* Database Administration
-* Web Development
-* Data Processing
-
-The languages in order of expertise/comfort:
-* **Go**
-* **Lua**
-* **Python**
-* **C**
-* **C++**
-* **Rust**
-* **JavaScript/TypeScript**
-* **SQL and NoSQL**
-* **C#**
-* **Java**
-* **PHP**
-
-The tech/frameworks/tools/setup:
-* **Linux** (I use Arch, BTW)
-* **NeoVim**
-* **Git**
-* **tmux**
-* **WezTerm**
-* **AWS Lambda, S3, EC2, SES**
-* **Linode**
-* **Datadog**
-* **GRPC**
-* **REST API**
-* **GraphQL**
-* **Grafana**
-* **Prometheus**
-* **And more!**
+I magically command computers to build games, tools, and software that ships.

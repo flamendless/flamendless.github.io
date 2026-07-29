@@ -1,0 +1,50 @@
+cv_url: https://drive.google.com/file/d/1RSNxKXmGR_rqprxZ-msjasFcbzVtd7D3/view?usp=sharing
+
+skills:
+  - Game Development
+  - Software Engineering
+  - Backend Development
+  - DevOps
+  - Database Administration
+  - Web Development
+  - Data Processing
+
+languages:
+  - name: Go
+    primary: true
+  - name: Lua
+    primary: true
+  - name: Python
+    primary: true
+  - name: C
+    primary: true
+  - name: C++
+    primary: false
+  - name: Rust
+    primary: false
+  - name: JavaScript/TypeScript
+    primary: false
+  - name: SQL and NoSQL
+    primary: false
+  - name: C#
+    primary: false
+  - name: Java
+    primary: false
+  - name: PHP
+    primary: false
+
+tools:
+  - Linux (I use Arch, BTW)
+  - NeoVim
+  - Git
+  - tmux
+  - WezTerm
+  - AWS Lambda, S3, EC2, SES
+  - Linode
+  - Datadog
+  - GRPC
+  - REST API
+  - GraphQL
+  - Grafana
+  - Prometheus
+  - And more!

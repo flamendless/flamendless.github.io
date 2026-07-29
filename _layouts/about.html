@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include header.html %}
+
+<body data-theme="{{ site.mode }}" class="about-page">
+  {% include navbar.html %}
+  <div class="wrapper about-wrapper">
+    <header class="about-hero" data-animate>
+      <div class="about-avatar-frame">
+        <img
+          class="about-avatar"
+          src="{{ site.author.avatar | relative_url }}"
+          alt="{{ site.author.name | escape }}"
+          width="160"
+          height="160"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <p class="about-eyebrow">About</p>
+      <h1 class="about-title" itemprop="headline">{{ site.author.name | escape }}</h1>
+      <p class="about-lead">{{ site.author.bio | strip }}</p>
+      {% if content != "" %}
+        <p class="about-intro">{{ content | strip_html | strip }}</p>
+      {% endif %}
+      <div class="about-actions">
+        <a
+          class="about-cta"
+          href="{{ site.data.about.cv_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CV / Resume
+        </a>
+        <a class="about-cta about-cta--secondary" href="{{ '/projects/' | relative_url }}">
+          View projects
+        </a>
+      </div>
+    </header>
+    <main class="page-content about-content" aria-label="Content">
+      {% include about-content.html %}
+    </main>
+    {% include footer.html %}
+  </div>
+  <script src="/assets/js/about.js" defer></script>
+</body>
+
+</html>

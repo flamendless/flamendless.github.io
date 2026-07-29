@@ -1,0 +1,119 @@
+- title: "Simply Track: Money"
+  description: "Track your current paycheck and expenses with a focused, minimal finance app."
+  image: /assets/img/projects/stm.png
+  category: apps
+  links:
+    - label: Play Store
+      url: https://play.google.com/store/apps/details?id=org.flamendless.theexpense
+      icon: playstore
+
+- title: "THE GOAL"
+  description: "Focus on the goal — a simple, effective goal-tracking and reminder app."
+  image: /assets/img/projects/thegoal.png
+  category: apps
+  links:
+    - label: Play Store
+      url: https://play.google.com/store/apps/details?id=org.flamendless.thegoal
+      icon: playstore
+
+- title: "BeriBunch"
+  description: "Your own brand profile and galleries for creative portfolios."
+  image: /assets/img/projects/beribunch.png
+  category: web
+  links:
+    - label: Website
+      url: https://beribunch.art
+      icon: www
+
+- title: "C-Choice"
+  description: "E-commerce platform with full admin tools for shop management."
+  image: /assets/img/projects/cchoice.png
+  category: web
+  links:
+    - label: Website
+      url: https://cchoice.shop
+      icon: www
+
+- title: "Youth Summit 2024 Bible Quiz"
+  description: "Theme: Karerun (Career Run) — a quiz app built in around four hours with Go."
+  image: /assets/img/projects/ys2024quiz.jpg
+  category: web
+  links:
+    - label: Blog post
+      url: https://flamendless.github.io/developing-an-app-in-go-in-around-4-hours/
+      icon: github
+    - label: Live quiz
+      url: https://flamendless.xyz/youth-summit-2024-quiz/
+      icon: www
+    - label: Source
+      url: https://github.com/flamendless/youth-summit-quiz-2024
+      icon: github
+
+- title: "Going Home: Revisited"
+  description: "A remaster of Going Home — pixel horror, puzzles, and survival."
+  image: /assets/img/projects/goinghomerevisited.png
+  category: games
+  links:
+    - label: itch.io
+      url: https://flamendless.itch.io/going-home-revisited
+      icon: itchio
+    - label: Play Store (paid)
+      url: https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited
+      icon: playstore
+    - label: Play Store (free)
+      url: https://play.google.com/store/apps/details?id=org.flamendless.goinghomerevisited_free
+      icon: playstore
+    - label: Source
+      url: https://github.com/flamendless/GoingHome
+      icon: github
+
+- title: "Slab"
+  description: "Immediate-mode GUI toolkit for LÖVE 2D. Maintained since v0.8.0 (originally by coding-jackalope)."
+  image: /assets/img/projects/slab.png
+  category: tools
+  links:
+    - label: GitHub
+      url: https://github.com/flamendless/Slab
+      icon: github
+    - label: LÖVE forums
+      url: https://love2d.org/forums/viewtopic.php?t=86410
+      icon: love2d
+
+- title: "CodeNect"
+  description: "Visual programming software built as a supplementary tool for beginners."
+  image: /assets/img/projects/codenect.png
+  category: tools
+  links:
+    - label: itch.io
+      url: https://flamendless.itch.io/codenect
+      icon: itchio
+    - label: Source
+      url: https://github.com/flamendless/CodeNect-VPS
+      icon: github
+
+- title: "Going Home"
+  description: "A pixelated horror, puzzle, and survival game."
+  image: /assets/img/projects/goinghome.png
+  category: games
+  links:
+    - label: Game Jolt
+      url: https://gamejolt.com/games/goinghome/237280
+      icon: gamejolt
+    - label: itch.io
+      url: https://flamendless.itch.io/going-home
+      icon: itchio
+    - label: Releases
+      url: https://github.com/flamendless/GoingHome/releases/tag/GoingHome
+      icon: github
+
+- title: "Zion English"
+  description: "Website for English learning and tutoring services."
+  image: /assets/img/projects/zionenglish.png
+  category: web
+  links:
+    - label: Website
+      url: https://zion-cha-english.academy
+      icon: zionenglish
+    - label: Source
+      url: https://github.com/flamendless/zion-english-vue
+      icon: github

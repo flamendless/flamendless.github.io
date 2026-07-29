@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include header.html %}
+
+<body data-theme="{{ site.mode }}" class="projects-page">
+  {% include navbar.html %}
+  <div class="wrapper projects-wrapper">
+    <header class="header projects-header">
+      <p class="projects-eyebrow">Portfolio</p>
+      <h1 class="header-title center projects-title" itemprop="headline">{{ page.title | escape }}</h1>
+      {% if content != "" %}
+        <p class="projects-intro">{{ content | strip_html | strip }}</p>
+      {% endif %}
+    </header>
+    <main class="page-content projects-content" aria-label="Content">
+      {% include projects-grid.html %}
+    </main>
+    {% include footer.html %}
+  </div>
+  <script src="/assets/js/projects.js" defer></script>
+</body>
+
+</html>
